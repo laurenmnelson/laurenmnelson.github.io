@@ -175,6 +175,10 @@ div.centered a{
     justify-content: center;
 }
 
+.btn:hover {
+    background-color: #6C8375;
+    border-radius: 25px;
+}
 
 /**
  * Note that we are using CSS Grid here.
