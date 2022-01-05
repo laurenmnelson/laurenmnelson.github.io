@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #202124;
+    color: #fff;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h2,
+h3 {
+    margin: 0;
+    padding: 1em 0;
+}
+
+p {
+    margin: 0;
+    padding: 1em 0;
+}
+
+/* Header Showcase */
+
+#showcase {
+    min-height: 450px;
+    color: #fff;
+    text-align: center;
+}
+
+#showcase .bg-image {
+    position: absolute;
+    /* Darkened Background Image Trick -- This Does Not Dim Text Overlay */
+    background-image: url("/img/glove.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#showcase h1 {
+    padding-top: 100px;
+    padding-bottom: 0;
+}
+
+#showcase .content-wrap,
+#section-a .content-wrap,
+#section-f .content-wrap {
+    padding: 0 1.5em;
+}
+
+/**
+ * Staggered Sections
+ */
+
+/* Section A & F */
+
+#section-a, #section-f {
+    background: #eaeaea;
+    color: #333;
+    padding-bottom: 2em;
+}
+
+.card-content {
+    padding: 1.5em;
+}
+
+/* Section C */
+
+#section-c {
+    background: #fff;
+    color: #333;
+    padding: 2em;
+}
+
+/* Section D & G / Boxes */
+
+#section-d .box,
+#section-g .box {
+    padding: 2em;
+    color: #fff;
+}
+
+#section-d .box:first-child {
+    /* background: #2690d4; */
+}
+
+/* Section E & H / Boxes */
+
+#section-e .box,
+#section-h .box {
+    padding: 2em;
+    color: #fff;
+}
+
+#section-e .box:last-child {
+    /* background: #2690d4; */
+}
+
+/* Footer */
+
+#main-footer {
+    display: grid;
+    padding: 1em;
+    column-gap: 5px;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto;  /* Specifies 4 columns each of auto width  */
+    background: #171717;
+    color: #fff;
+}
+
+#main-footer a {
+    text-decoration: none;
+}
+
+div.centered a{
+    padding: 10px 12px;
+    border-radius: 3px;
+    font-size: 20px;
+    color: white;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#main-footer img {
+    width: 50px;
+}
+
+#d-left {
+    min-height: 344px;
+    min-width: 100px;
+    background: no-repeat center url(img/sqyr.png);
+    background-size: 85%;
+}
+
+#e-right {
+    min-height: 344px;
+    min-width: 100px;
+    background: no-repeat center url(img/scheduler.png);
+    background-size: 85%;
+}
+
+#g-left {
+    min-height: 344px;
+    background: no-repeat center url(img/glove.jpg);
+    background-size: 85%;
+}
+
+#h-right {
+    min-height: 344px;
+    background: no-repeat center url(https://www.caughtmyeye.dev/assets/images/surabaya/surabaya-pasar-atom-800w.jpg);
+}
+
+.btn {
+    background-color: #325ea8;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#main-footer {
+    display: flex;
+    justify-content: center;
+}
+
+
+/**
+ * Note that we are using CSS Grid here.
+ */
+
+/* Media Queries */
+
+@media (min-width: 700px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    }
+
+    #section-a .content-text,
+    #section-f .content-text {
+        columns: 2;
+        column-gap: 2em;
+    }
+
+    #section-a .content-text p,
+    #section-f .content-text p {
+        padding-top: 0;
+    }
+
+    .content-wrap,
+    #section-b ul {
+        grid-column: 2/4;
+    }
+
+    .box,
+    #main-footer div {
+        grid-column: span 2;
+    }
+
+    #main-footer {
+        text-align:center;
+    }
+    #section-b ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #section-b li {
+        width: 31%;
+    }
+
+    /**
+     * Mobile First - The images are placed above the text by
+     * default.
+     *
+     * Only Re-order Columns for Larger Displays
+     *
+     * These two lines of code is where the rubber meets the road.
+     * This only affects the second row where we will put the text
+     * on the left and the image on the right.
+     */
+    #section-h.grid div:nth-of-type(1) {
+        order: 2; /* This is the image. Make it go to the right. */
+    }
+    #section-h.grid div:nth-of-type(2) {
+        order: 1; /* This is the text. Make it go to the left. */
+    }
+}
+
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
