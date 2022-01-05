@@ -25,38 +25,6 @@ p {
     padding: 1em 0;
 }
 
-/* Header Showcase */
-
-#showcase {
-    min-height: 450px;
-    color: #fff;
-    text-align: center;
-}
-
-#showcase .bg-image {
-    position: absolute;
-    /* Darkened Background Image Trick -- This Does Not Dim Text Overlay */
-    background-image: url("/img/glove.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 450px;
-    z-index: -1;
-    opacity: 0.4;
-}
-
-#showcase h1 {
-    padding-top: 100px;
-    padding-bottom: 0;
-}
-
-#showcase .content-wrap,
-#section-a .content-wrap,
-#section-f .content-wrap {
-    padding: 0 1.5em;
-}
-
 /**
  * Staggered Sections
  */
@@ -241,24 +209,4 @@ div.centered a{
     #section-h.grid div:nth-of-type(2) {
         order: 1; /* This is the text. Make it go to the left. */
     }
-}
-
-/* unvisited link */
-a:link {
-    color: red;
-}
-
-/* visited link */
-a:visited {
-    color: green;
-}
-
-/* mouse over link */
-a:hover {
-    color: hotpink;
-}
-
-/* selected link */
-a:active {
-    color: blue;
 }
