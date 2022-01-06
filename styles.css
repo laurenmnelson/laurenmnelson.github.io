@@ -97,8 +97,8 @@ div h3 {
 
 #main-footer {
     display: grid;
-    padding: 1em;
-    column-gap: 5px;
+    padding: 2em;
+    column-gap: 20px;
     justify-content: center;
     grid-template-columns: auto auto auto auto;  /* Specifies 4 columns each of auto width  */
     background: #171717;
