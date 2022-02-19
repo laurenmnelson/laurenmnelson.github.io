@@ -1,0 +1,82 @@
+body {
+    font-family: Poppins, Helvetica, sans-serif;
+    background-color: #171817;
+}
+
+h2 {
+    color: #7777c2;
+    font-weight: bolder;
+}
+
+h3 {
+    color: #7777c2;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+}
+
+h4 {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.images {
+    object-fit: cover;
+    width: 270px;
+    height: 270px;
+    border-radius: 20px;
+}
+
+.text-cont {
+    background-color: #FEFFFE;
+    width: 400px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.box {
+    padding: 20px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(6, 6fr);
+    grid-template-rows: repeat(2, auto);
+    justify-content: center;
+    align-content: center;
+    gap: 1em;
+}
+
+.logo {
+    object-fit: cover;
+    width: 45px;
+    height: 45px;
+    padding-bottom: 10px;
+}
+
+#main-footer {
+    display: grid;
+    padding: 2em;
+    column-gap: 20px;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto;  /* Specifies 4 columns each of auto width  */
+    background: #171717;
+    color: #fff;
+}
+
+#main-footer a {
+    text-decoration: none;
+}
+
+div.centered a{
+    padding: 10px 12px;
+    border-radius: 3px;
+    font-size: 20px;
+    color: white;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#main-footer img {
+    width: 50px;
+}
