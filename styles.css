@@ -8,7 +8,7 @@ body {
 }
 
 h1 {
-    padding-top: 125px;
+    padding-top: 115px;
     text-align: center;
     font-size: 10em;
     margin-bottom: 0;
@@ -23,6 +23,14 @@ h2 {
     margin-bottom: 30px;
     color: #7777c2;
     font-family: 'Birthstone Bounce', cursive;
+}
+
+#past h2 {
+    padding-top: 0;
+}
+
+#past .projects{
+    padding-top: 0;
 }
 
 h3 {
@@ -107,13 +115,6 @@ div.centered a {
     width: 50px;
 }
 
-.scrolling {
-    padding-top: 275px;
-    text-align: center;
-    color: #FEFFFE;
-    opacity: 50%;
-}
-
 .projects {
     padding-top: 50px;
 }
@@ -128,4 +129,50 @@ div.centered a {
 
 #github:hover {
     opacity: 50%;
+}
+
+#name {
+    height: 100vh;
+}
+
+#currently {
+    padding-top: 20px;
+    height: 100vh;
+}
+
+nav li{
+    list-style-type: none;
+}
+
+nav li a:link {
+    color: white;
+    text-decoration: none;
+    padding-left: 100px;
+}
+
+nav li a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+nav li a:active {
+    color: white;
+    text-decoration: underline;
+}
+
+#logo {
+    color: #7777c2;
+    font-size: 2em;
+    font-family: 'Birthstone Bounce', cursive;
+}
+
+nav {
+    display: flex;
+    padding-top: 1em;
+    justify-content: center;
 }
