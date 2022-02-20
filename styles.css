@@ -117,3 +117,15 @@ div.centered a {
 .projects {
     padding-top: 50px;
 }
+
+#mail:hover {
+    opacity: 50%;
+}
+
+#linkedin:hover {
+    opacity: 50%;
+}
+
+#github:hover {
+    opacity: 50%;
+}
