@@ -1,20 +1,42 @@
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Poppins, Helvetica, sans-serif;
     background-color: #171817;
 }
 
+h1 {
+    padding-top: 125px;
+    text-align: center;
+    font-size: 10em;
+    margin-bottom: 0;
+    color: #7777c2;
+    font-family: 'Birthstone Bounce', cursive;
+}
+
 h2 {
+    padding-top: 165px;
+    text-align: center;
+    font-size: 7em;
+    margin-bottom: 30px;
+    color: #7777c2;
+    font-family: 'Birthstone Bounce', cursive;
+}
+
+h3 {
     color: #7777c2;
     font-weight: bolder;
 }
 
-h3 {
+h4 {
     color: #7777c2;
     padding-bottom: 0;
     margin-bottom: 10px;
 }
 
-h4 {
+h5 {
     padding-top: 0;
     margin-top: 0;
 }
@@ -34,8 +56,12 @@ h4 {
     border-radius: 20px;
 }
 
-.box {
+.parent-row .row .box {
     padding: 20px;
+}
+
+.textBox {
+    padding: 10px;
 }
 
 .row {
@@ -59,7 +85,7 @@ h4 {
     padding: 2em;
     column-gap: 20px;
     justify-content: center;
-    grid-template-columns: auto auto auto auto;  /* Specifies 4 columns each of auto width  */
+    grid-template-columns: auto auto auto auto; /* Specifies 4 columns each of auto width  */
     background: #171717;
     color: #fff;
 }
@@ -68,7 +94,7 @@ h4 {
     text-decoration: none;
 }
 
-div.centered a{
+div.centered a {
     padding: 10px 12px;
     border-radius: 3px;
     font-size: 20px;
@@ -79,4 +105,15 @@ div.centered a{
 
 #main-footer img {
     width: 50px;
+}
+
+.scrolling {
+    padding-top: 275px;
+    text-align: center;
+    color: #FEFFFE;
+    opacity: 50%;
+}
+
+.projects {
+    padding-top: 50px;
 }
